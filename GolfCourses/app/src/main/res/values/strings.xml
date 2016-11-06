@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GolfCourses</string>
+    <string name="typeLabelName">Type: </string>
+    <string name="addressLabelName">Address: </string>
+    <string name="GPSLabelName">GPS: </string>
+    <string name="phoneLabelName">Phone: </string>
+    <string name="emailLabelName">E-mail: </string>
+    <string name="webLabelName">Web: </string>
+    <string name="descriptionLabelName">Description: </string>
 </resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/detailImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailName"
+        android:layout_below="@+id/detailImage"
+        android:layout_alignStart="@+id/detailImage"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailPhone"
+        android:layout_below="@+id/detailGPS"
+        android:layout_alignStart="@+id/detailEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailAddress"
+        android:layout_below="@+id/detailType"
+        android:layout_alignStart="@+id/detailGPS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/detailType"
+        android:layout_below="@+id/detailName"
+        android:layout_alignStart="@+id/detailAddress" />
+
+    <TextView
+        android:text="@string/descriptionLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/descriptionLabel"
+        android:layout_below="@+id/webLabel"
+        android:layout_alignStart="@+id/webLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailEmail"
+        android:layout_below="@+id/detailPhone"
+        android:layout_alignStart="@+id/detailWeb" />
+
+    <TextView
+        android:onClick="webPageOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailWeb"
+        android:layout_below="@+id/detailEmail"
+        android:layout_alignStart="@+id/detailDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailDescription"
+        android:layout_alignBaseline="@+id/descriptionLabel"
+        android:layout_alignBottom="@+id/descriptionLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/descriptionLabel" />
+
+    <TextView
+        android:onClick="mapIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailGPS"
+        android:layout_below="@+id/detailAddress"
+        android:layout_alignStart="@+id/detailPhone" />
+
+    <TextView
+        android:text="@string/typeLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeLabel"
+        android:layout_above="@+id/addressLabel"
+        android:layout_alignEnd="@+id/phoneLabel"
+        android:layout_alignTop="@+id/detailType"
+        android:layout_alignStart="@+id/GPSLabel" />
+
+    <TextView
+        android:text="@string/addressLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressLabel"
+        android:layout_above="@+id/GPSLabel"
+        android:layout_alignStart="@+id/typeLabel"
+        android:layout_below="@+id/detailType" />
+
+    <TextView
+        android:text="@string/phoneLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneLabel"
+        android:layout_alignBaseline="@+id/detailPhone"
+        android:layout_alignBottom="@+id/detailPhone"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:text="@string/emailLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailLabel"
+        android:layout_below="@+id/phoneLabel"
+        android:layout_alignStart="@+id/phoneLabel" />
+
+    <TextView
+        android:text="@string/webLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webLabel"
+        android:layout_below="@+id/emailLabel"
+        android:layout_alignStart="@+id/emailLabel" />
+
+    <TextView
+        android:text="@string/GPSLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GPSLabel"
+        android:layout_above="@+id/phoneLabel"
+        android:layout_alignStart="@+id/phoneLabel"
+        android:layout_below="@+id/detailAddress" />
+</RelativeLayout>
